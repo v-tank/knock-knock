@@ -1,5 +1,5 @@
 # Publishes this repo (homepage + privacy policy) to GitHub Pages.
-# Source of truth is site/ in the private knock-knock repo; see its README.
+# Source of truth is site/ in the private knock-knock-extension repo; see its README.
 name: Pages
 on:
   push:
