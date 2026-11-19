@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy · Knock Knock</title>
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="nav">
+        <img src="assets/icon.svg" alt="" />
+        <a class="brand" href="./">Knock Knock</a>
+        <nav><a href="./">Home</a></nav>
+      </header>
+
+      <article class="doc">
+        <h1>Privacy policy</h1>
+        <p class="updated">Effective {{EFFECTIVE_DATE}}</p>
+
+        <p class="note">In short: Knock Knock reads your calendar so it can ring you before meetings. That data stays in your browser. It is never sent to us or to anyone else, and there are no servers, analytics or ads.</p>
+
+        <h2>What Knock Knock is</h2>
+        <p>Knock Knock is a browser extension for Chrome, other Chromium browsers, and Firefox. It rings you shortly before Google Meet meetings on your calendar, with buttons to join or snooze.</p>
+
+        <h2>Data the extension accesses</h2>
+        <p>If you sign in with Google, Knock Knock asks for read-only access to your calendar events (the <code>https://www.googleapis.com/auth/calendar.events.readonly</code> scope). It reads events on your primary calendar from about 15 minutes ago to 24 hours ahead, and uses:</p>
+        <ul>
+          <li>each event's ID, title, start and end time, status and type;</li>
+          <li>the event's Google Meet link, and its description and location, which are read only to find a Meet link;</li>
+          <li>attendee names or email addresses, and your own response (accepted, declined and so on), so declined meetings don't ring;</li>
+          <li>the calendar's email address, shown in settings so you know which account is connected.</li>
+        </ul>
+        <p>If you use a secret iCal address instead, Knock Knock reads the same kinds of fields from that feed, and the address itself is stored as a setting.</p>
+        <p>Knock Knock can't change your calendar, and it doesn't access email, contacts, files or any other Google data.</p>
+
+        <h2>How the data is used</h2>
+        <p>Only to provide the extension's single feature: work out which meetings to ring for and when, show the meeting's title, time and attendees in the ring window and settings page, and open the meeting link when you click Join.</p>
+
+        <h2>Where the data is stored</h2>
+        <ul>
+          <li><b>On your device only.</b> Upcoming events, ring state (for example "snoozed") and your settings are kept in the browser's extension storage.</li>
+          <li>The Google access token is kept in session storage, held in memory and cleared when the browser closes. It's never written to disk by the extension.</li>
+          <li>Only events between about 15 minutes ago and 24 hours ahead are kept. Older ones are removed at the next calendar check, which happens every 5 minutes.</li>
+        </ul>
+
+        <h2>Sharing</h2>
+        <p>None. Knock Knock has no backend server. Calendar data is never sent to the developer or to any third party, and it's never sold, used for advertising, or used to train AI models. The only network requests the extension makes are to Google, to sign in (accounts.google.com), read your calendar (www.googleapis.com or calendar.google.com) and revoke access when you sign out (oauth2.googleapis.com). It opens meet.google.com when you click Join.</p>
+
+        <h2>Google API Services User Data Policy</h2>
+        <p>Knock Knock's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li><b>Sign out</b> in Knock Knock's settings to disconnect your calendar, revoke the extension's access token and clear the stored events.</li>
+          <li><b>Revoke access</b> at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+          <li><b>Uninstall</b> the extension to delete everything it stored. Browsers remove an extension's storage when it's uninstalled.</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>Knock Knock isn't directed at children under 13 and doesn't knowingly collect their data.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes, the new version will be posted on this page with a new effective date. Material changes to how data is used will be announced in the extension's store listing.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about privacy: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+      </article>
+
+      <footer>
+        <span>© 2026 Knock Knock</span>
+        <a href="./">Home</a>
+      </footer>
+    </div>
+  </body>
+</html>
