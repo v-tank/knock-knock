@@ -14,7 +14,7 @@
       <header class="nav">
         <img src="assets/icon.svg" alt="" />
         <a class="brand" href="./">Knock Knock</a>
-        <nav><a href="#how">How it works</a><a href="privacy.html">Privacy</a></nav>
+        <nav><a href="#how">How it works</a><a href="#data">Your data</a><a href="privacy.html">Privacy</a></nav>
       </header>
 
       <section class="hero">
@@ -43,6 +43,12 @@
         <h2>How it works</h2>
         <p>Install the extension and sign in with Google. Knock Knock checks your primary calendar every few minutes and schedules a ring for every video meeting you haven't declined (Google Meet links today). If a meeting moves, so does the ring. Unanswered rings snooze themselves, and they stop 10 minutes after the meeting starts.</p>
         <img class="shot" src="assets/settings.png" width="1280" height="800" alt="Knock Knock settings: connected Google account, ringing options and upcoming meetings" loading="lazy" />
+      </section>
+
+      <section class="band" id="data">
+        <h2>Why Knock Knock asks for calendar access</h2>
+        <p>When you sign in with Google, Knock Knock asks for one permission: <b>read-only access to your Google Calendar events</b> (<code>calendar.events.readonly</code>). It uses that access only to find your upcoming meetings, so it can ring you before each one. From each event it reads the start and end time, the title and attendees (to show them in the ring window), the video-meeting link (so Join opens it), and your own response (so meetings you declined don't ring).</p>
+        <p>Knock Knock can't change your calendar. The events it reads are stored only in your browser and are never sent to us or to anyone else. There's no server, no analytics and no advertising. You can sign out or revoke access at any time. Full details are in the <a href="privacy.html">privacy policy</a>.</p>
       </section>
 
       <section class="band" id="install">
